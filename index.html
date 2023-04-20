@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Ejercicio Grupal M3-1</title>
+</head>
+<body>
+    <div class="asd">
+        askjhaskjdh
+    </div>
+    <div id="container_calculadora" class="row">
+        <div class="col">
+            <h2>Calculadora de temperatura</h2>
+            <div class="container col">
+                <div class="row">
+                    <h3>Ingresa la temperatura en Cº y ve a cuánto corresponde en fahrenheit y kelvin</h3>                
+                </div>
+                <div class="row">
+                    <div>
+                        <input type="number" id="celcius" class="ingreso" placeholder="ingresa un número"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <p>Fahrenheit</p>
+                        <div id="kelvin" class="result"></div>
+                    </div>
+                    <div>
+                        <p>Kelvin</p>
+                        <div id="fahrenheit" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button onclick="changeitem(1)"> Dias </button>
+        </div>
+    </div>
+
+    <div id="container_dias" class="row">
+        <div class="col">
+            <button onclick="changeitem(0)"> Cº</button>
+        </div>
+        <div class="col">
+            <h2>Contador de días</h2>
+            <div class="container">
+                <div class="row">
+                    <h3>Ingresa una cantidad de días</h3>
+                </div>
+                <div class="row">
+                    <div>
+                        <input type="number" id="dias" class="ingreso" placeholder="ingresa un número"> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="result_dias">
+                        Ingresa un número acá arriba y ve a cuántos años, semanas y días corresponde
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <button onclick="changeitem(2)"> Suma </button>
+        </div>
+    </div>
+
+    <div id="container_numeros" class="row">
+        <div class="col">
+            <button onclick="changeitem(1)"> Dias </button>
+        </div>
+        <div class="col">
+            <h2>Calculo promedio y suma</h2>
+            <div class="container">
+                <div class="row">
+                    <h3>Ingresa 5 números</h3>
+                </div>
+                <div class="row">
+                        <input type="number" id="numero1" class="ingresosmall col" placeholder="número 1"> 
+                        <input type="number" id="numero2" class="ingresosmall col" placeholder="número 2"> 
+                        <input type="number" id="numero3" class="ingresosmall col" placeholder="número 3"> 
+                        <input type="number" id="numero4" class="ingresosmall col" placeholder="número 4"> 
+                        <input type="number" id="numero5" class="ingresosmall col" placeholder="número 5"> 
+                </div>
+                <div class="row">
+                    <div id="result_sumas">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/sumas.js"></script>
+    <script src="./assets/js/dias.js"></script>
+</body>
+</html>
